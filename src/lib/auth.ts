@@ -4,7 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 import { findUserByEmail, createUser } from "@/repositories/userRepository";
 import { createUserProgress } from "@/repositories/userProgressRepository";
 import { type DefaultSession } from "next-auth";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export const authOptions: NextAuthOptions = {
   providers: [
