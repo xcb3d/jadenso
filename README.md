@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JadenSo Japanese Learning Platform
 
-## Getting Started
+A comprehensive Japanese language learning platform built with Next.js, React, TypeScript, and MongoDB.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Interactive alphabet learning (Hiragana, Katakana)
+- Flashcard system for vocabulary practice
+- Speaking exercises with AI feedback
+- Reading comprehension practice
+- Progressive lesson structure with units
+- User progress tracking
+- Exercise generation with AI assistance
+- Authentication system
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/jadenso.git
+   cd jadenso
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Configure your MongoDB connection and authentication settings in `.env.local` like `.env.example`
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Open your browser and navigate to `http://localhost:3000`
 
-## Deploy on Vercel
+3. Register an account to begin your Japanese learning journey
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Key Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Alphabet learning with writing practice
+- Flashcard decks for vocabulary memorization
+- Speaking practice with pronunciation feedback
+- Reading exercises with interactive text
+- Structured lessons and units for progressive learning
+- User profile with progress tracking

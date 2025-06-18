@@ -1,0 +1,144 @@
+/* Japanese text styling */
+.ruby-container {
+  margin-top: 1em;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.1em;
+}
+
+.japanese-text {
+  font-size: 1.25rem;
+  line-height: 2.5;
+  letter-spacing: 0.05em;
+}
+
+.japanese-word {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.japanese-word.kanji {
+  cursor: pointer;
+}
+
+.japanese-word.has-meaning {
+  cursor: pointer;
+  text-decoration: underline dotted #4f46e5 1px;
+  text-underline-offset: 4px;
+}
+
+.japanese-word.kanji:hover,
+.japanese-word.has-meaning:hover {
+  color: #4f46e5;
+}
+
+.japanese-word:active {
+  transform: scale(0.97);
+}
+
+.furigana {
+  position: absolute;
+  top: -1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  color: #4f46e5;
+  opacity: 0;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.japanese-word.kanji:hover .furigana,
+.japanese-word.show-all .furigana {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.meaning {
+  position: absolute;
+  bottom: -2em;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  font-size: 0.75rem;
+  background-color: #1f2937;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  opacity: 0;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.japanese-word:hover .meaning,
+.meaning.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Grammar styles */
+.grammar-highlight {
+  background-color: rgba(99, 102, 241, 0.1);
+  border-radius: 0.25em;
+  padding: 0 0.2em;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.grammar-highlight::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(99, 102, 241, 0.5);
+  border-radius: 1px;
+}
+
+.active-grammar {
+  background-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+.grammar-point {
+  position: absolute;
+  top: -1.5em;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  font-size: 0.65rem;
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  opacity: 0;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  z-index: 10;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.3);
+}
+
+.japanese-word:hover .grammar-point,
+.grammar-point.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+} 
