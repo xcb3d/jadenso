@@ -17,7 +17,7 @@ A comprehensive Japanese language learning platform built with Next.js, React, T
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/jadenso.git
+   git clone https://github.com/xcb3d/jadenso.git
    cd jadenso
    ```
 
