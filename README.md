@@ -2,6 +2,8 @@
 
 A comprehensive Japanese language learning platform built with Next.js, React, TypeScript, and MongoDB.
 
+[Preview video](https://youtu.be/vKrGrWL7tpc)
+
 ## Features
 
 - Interactive alphabet learning (Hiragana, Katakana)
